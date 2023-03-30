@@ -6,8 +6,7 @@ document.addEventListener("copy", (event) => {
   event.preventDefault();
 });
 
-const target = document.querySelector("#target");
-
+const target = document.querySelector("textarea.target");
 target.addEventListener("paste", (event) => {
   event.preventDefault();
 
