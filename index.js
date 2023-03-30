@@ -6,7 +6,9 @@ document.addEventListener("copy", (event) => {
   event.preventDefault();
 });
 
-document.addEventListener("paste", (event) => {
+const target = document.querySelector("#target");
+
+target.addEventListener("paste", (event) => {
   event.preventDefault();
 
   let paste = (event.clipboardData || window.clipboardData).getData("text");
